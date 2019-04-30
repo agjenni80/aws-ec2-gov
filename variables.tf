@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "ami_id" {
   description = "ID of the AMI to provision. Default is Ubuntu 14.04 Base Image"
-  default = "ami-f63b1193"
+  default = "ami-36059957"
 }
 
 variable "instance_type" {
@@ -20,7 +20,7 @@ variable "name" {
 
 variable "key_name" {
    description = "name of the SSH key for accessing the instance"
-   default = "ajennings-key"
+   default = "ajennings-ptfe"
   }  
 
 variable "volume_size" {
@@ -29,9 +29,9 @@ variable "volume_size" {
 }
 
 variable "public_key_path" {
-  default = "/Users/agjennings/.ssh/ajennings-key.pub"
+  default = "/Users/agjennings/Desktop/govcloud/ajennings-ptfe-key.pub"
 }
 
 variable "private_key_data" {
-  default =""
+  default ="/Users/agjennings/Desktop/govcloud/ajennings-ptfe.pem"
 }
